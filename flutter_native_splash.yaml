@@ -1,0 +1,4 @@
+flutter_native_splash:
+  background_image: "lib/assets/splash_background.png"
+  image: lib/assets/liquor.png
+
