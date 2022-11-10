@@ -58,8 +58,8 @@ class CameraScreenState extends State<CameraScreen> {
         appBar: AppBar(
           leading: IconButton(
             icon: Icon(
-              Icons.arrow_back,
-              color: Colors.black,
+              Icons.arrow_back_ios,
+              color: Colors.white,
             ),
             onPressed: () {
               Navigator.pop(context);
@@ -84,9 +84,8 @@ class CameraScreenState extends State<CameraScreen> {
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
                 colors: <Color>[
-                  Color(0xfff7797d),
-                  //Color(0xffFBD786),
-                  Color(0xffF16364),
+                  Color(0xffff6e7f),
+                  Color(0xffC5DEF3),
                 ],
                 tileMode: TileMode.mirror,
               ),
@@ -99,9 +98,8 @@ class CameraScreenState extends State<CameraScreen> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: <Color>[
-                Color(0xfff7797d),
-                Color(0xffFBD786),
-                Color(0xffC6FFDD),
+                Color(0xffF1889B),
+                Color(0xffbfe9ff),
               ],
               tileMode: TileMode.mirror,
             ),
@@ -127,12 +125,11 @@ class CameraScreenState extends State<CameraScreen> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         gradient: const LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
                           colors: <Color>[
-                            Color(0xfff7797d),
-                            Color(0xffFBD786),
-                            Color(0xffC6FFDD),
+                            Color(0xffE3A5B8),
+                            Color(0xffbfe9ff),
                           ],
                           tileMode: TileMode.mirror,
                         ),
@@ -146,8 +143,8 @@ class CameraScreenState extends State<CameraScreen> {
                         ],
                       ),
                       child: const Icon(
-                        Icons.camera_alt_outlined,
-                        color: Colors.black,
+                        Icons.search,
+                        color: Colors.white60
                       ),
                     ),
                     onPressed: () async {
