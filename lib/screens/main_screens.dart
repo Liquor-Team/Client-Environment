@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:graduation_project/main.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'camera/camera_screen.dart';
-import 'custom_drinks/custom_drinks.dart';
-import 'drink_list/drink_list.dart';
+import 'package:graduation_project/screens/cocktail_list/cocktail_list.dart';
+import 'cocktail_list/cocktail_list.dart';
 import 'near_liquor_shop/near_liquor_shop.dart';
 
 // 테스트용
@@ -39,6 +39,8 @@ class MainScreen extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
+                fontFamily: 'kor',
+                fontSize: 20,
               ),
               colors: [
                 Color(0xff642B73),
@@ -46,7 +48,7 @@ class MainScreen extends StatelessWidget {
               ],
             ),
             duration: Duration(seconds: 2),
-            backgroundColor: Color.fromRGBO(198, 255, 221, 0.9),
+            backgroundColor: Color.fromRGBO(200, 216, 238, 0.9),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(30))),
             behavior: SnackBarBehavior.floating,
@@ -80,9 +82,8 @@ class MainScreen extends StatelessWidget {
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
                 colors: <Color>[
-                  Color(0xfff7797d),
-                  //Color(0xffFBD786),
-                  Color(0xffF16364),
+                  Color(0xffff6e7f),
+                  Color(0xffC5DEF3),
                 ],
                 tileMode: TileMode.mirror,
               ),
@@ -95,9 +96,8 @@ class MainScreen extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: <Color>[
-                Color(0xfff7797d),
-                Color(0xffFBD786),
-                Color(0xffC6FFDD),
+                Color(0xffF1889B),
+                Color(0xffbfe9ff),
               ],
               tileMode: TileMode.mirror,
             ),
@@ -169,9 +169,9 @@ class MainScreen extends StatelessWidget {
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
                               colors: <Color>[
-                                Color(0xffFBCE85),
-                                Color(0xffF1DF96),
-                                Color(0xffE1EAB0),
+                                Color(0xffDEADC1),
+                                //Color(0xffF1DF96),
+                                Color(0xffC5DEF3),
                               ],
                               tileMode: TileMode.mirror,
                             ),
@@ -212,9 +212,9 @@ class MainScreen extends StatelessWidget {
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                           colors: <Color>[
-                            Color(0xffF3DD94),
-                            Color(0xffE3E9AE),
-                            Color(0xffD4F4C6),
+                            Color(0xffDEADC1),
+                            //Color(0xffE3E9AE),
+                            Color(0xffC5DEF3),
                           ],
                           tileMode: TileMode.mirror,
                         ),
