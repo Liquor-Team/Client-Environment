@@ -113,9 +113,8 @@ class _LiquorInformationState extends State<LiquorInformation> {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: <Color>[
-                Color(0xfff7797d),
-                Color(0xffFBD786),
-                Color(0xffC6FFDD),
+                Color(0xffff6e7f),
+                Color(0xffbfe9ff),
               ],
               tileMode: TileMode.mirror,
             ),
@@ -124,12 +123,11 @@ class _LiquorInformationState extends State<LiquorInformation> {
             child: Container(
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
                   colors: <Color>[
-                    Color(0xfff7797d),
-                    Color(0xffFBD786),
-                    Color(0xffC6FFDD),
+                    Color(0xffff6e7f),
+                    Color(0xffbfe9ff),
                   ],
                   tileMode: TileMode.mirror,
                 ),
