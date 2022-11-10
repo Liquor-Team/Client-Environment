@@ -107,8 +107,54 @@ class _LiquorInformationState extends State<LiquorInformation> {
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
         }
-        return const CircularProgressIndicator();
+        return Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: <Color>[
+                Color(0xffff6e7f),
+                Color(0xffbfe9ff),
+              ],
+              tileMode: TileMode.mirror,
+            ),
+          ),
+          child: Center(
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: <Color>[
+                    Color(0xffff6e7f),
+                    Color(0xffbfe9ff),
+                  ],
+                  tileMode: TileMode.mirror,
+                ),
+              ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    const Spacer(flex: 3),
+                    Image.asset(
+                      "lib/assets/giphy_loading.gif",
+                      width: 200,
+                      height: 200,
+                    ),
+                    //Padding(padding: EdgeInsets.all(10)),
+                    Image.asset(
+                      "lib/assets/loading_bar.gif",
+                    ),
+                    const Spacer(flex: 1),
+                  ],
+                )
+            ),
+          ),
+        );
       }
     );
   }
 }
+
+/*return const CircularProgressIndicator();*/
+
