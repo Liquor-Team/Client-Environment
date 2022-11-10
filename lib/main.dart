@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
+import 'package:graduation_project/screens/main_screens.dart';
+import 'package:graduation_project/screens/cocktail_list/cocktail_list.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import 'theme.dart';
