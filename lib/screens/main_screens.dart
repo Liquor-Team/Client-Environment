@@ -177,7 +177,7 @@ class MainScreen extends StatelessWidget {
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.2),
+                                color: Colors.black.withOpacity(0.25),
                                 spreadRadius: 2,
                                 blurRadius: 3,
                                 offset: const Offset(0, 3),
@@ -220,7 +220,7 @@ class MainScreen extends StatelessWidget {
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
+                            color: Colors.black.withOpacity(0.25),
                             spreadRadius: 2,
                             blurRadius: 3,
                             offset: const Offset(0, 3),
@@ -231,9 +231,9 @@ class MainScreen extends StatelessWidget {
                       padding: EdgeInsets.all(10),
                       child: Center(
                           child: Image.asset(
-                        "lib/assets/cocktail-find.png",
-                        width: 75,
-                        height: 75,
+                        "lib/assets/cocktail_finder.png",
+                        width: 85,
+                        height: 85,
                       )),
                     ),
                   ),

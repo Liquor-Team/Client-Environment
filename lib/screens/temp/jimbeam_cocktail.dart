@@ -6,6 +6,7 @@ import 'package:graduation_project/util/constants.dart';
 import 'package:material_floating_search_bar/material_floating_search_bar.dart';
 import 'package:graduation_project/util/cocktail_data.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
+import 'package:graduation_project/screens/temp/old_fashioned.dart';
 
 class JimBeamCocktail extends StatefulWidget {
   const JimBeamCocktail({Key? key}) : super(key: key);
@@ -122,18 +123,24 @@ class _JimBeamCocktailState extends State<JimBeamCocktail> {
                                   Image.asset('${jimbeam_List[index].image!}',
                                   width: 60,
                                   height: 60,),
-                              trailing: GradientText(
-                                '더보기',
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'kor',
-                                  fontSize: 20,
+                              trailing: InkWell(
+                                onTap: (){
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) => OldFashioned()));
+                                },
+                                child: GradientText(
+                                  '더보기',
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'kor',
+                                    fontSize: 20,
+                                  ),
+                                  colors: [
+                                    Color(0xffC6426E),
+                                    Color(0xff642B73),
+                                  ],
                                 ),
-                                colors: [
-                                  Color(0xffC6426E),
-                                  Color(0xff642B73),
-                                ],
-                              ),
+                              )
                             )))
               ],
             ),

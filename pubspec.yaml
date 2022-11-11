@@ -44,6 +44,8 @@ dependencies:
   simple_gradient_text: ^1.2.4
   fluttertoast: ^8.1.1
   material_floating_search_bar: ^0.3.7
+  flutter_launcher_icons: ^0.10.0
+  flutter_screenutil: ^5.6.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -60,10 +62,12 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/assets/juice.png"
+  min_sdk_android: 21
 
-# The following section is specific to Flutter packages.
 flutter:
 
   # The following line ensures that the Material Icons font is
@@ -85,6 +89,7 @@ flutter:
    - lib/assets/giphy_loading.gif
    - lib/assets/loading_bar.gif
    - lib/assets/jim_beam.png
+   - lib/assets/cocktail_finder.png
    - lib/assets/real_cocktails/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

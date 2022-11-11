@@ -23,6 +23,9 @@ class _TempInformationState extends State<TempInformation> {
 
   @override
   Widget build(BuildContext context) {
+
+    final displaySize = MediaQuery.of(context).size;
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -82,6 +85,7 @@ class _TempInformationState extends State<TempInformation> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Container(
+                    height: displaySize.height * 0.1,
                     child: GradientText(
                       tempCocktail.name!,
                       style: const TextStyle(
@@ -95,22 +99,20 @@ class _TempInformationState extends State<TempInformation> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 25,
-                  ),
                   Container(
+                    height: displaySize.height * 0.3,
                     child: Image.asset(
                       'lib/assets/jim_beam.png',
-                      width: 250,
-                      height: 250,
                     ),
                   ),
                   SizedBox(
-                    height: 25,
+                    height: displaySize.height * 0.05,
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
                     padding: EdgeInsets.all(10),
+                    height: displaySize.height * 0.27,
+                    width: displaySize.width,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       //color: Colors.white.withOpacity(0.15),
@@ -132,18 +134,23 @@ class _TempInformationState extends State<TempInformation> {
                         ),
                       ],
                     ),
-                    child: Container(
-                      margin: EdgeInsets.all(15),
-                      child: Text(
-                        jimbeam,
-                        style: TextStyle(
-                            fontFamily: 'kor',
-                            fontSize: 20,
-                             fontWeight: FontWeight.bold),
+                    child: Expanded(
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.vertical,
+                        child: Text(
+                          jimbeam,
+                          style: TextStyle(
+                            height: 1.5,
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   ),
                   Container(
+                    height: displaySize.height * 0.07,
+                    width: displaySize.width,
                     padding: EdgeInsets.all(10),
                     margin: EdgeInsets.fromLTRB(10, 25, 10, 0),
                     decoration: BoxDecoration(
@@ -198,46 +205,3 @@ class _TempInformationState extends State<TempInformation> {
     );
   }
 }
-
-
-/*Container(
-                        padding: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          gradient: const LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: <Color>[
-                              Color(0xffF1889B),
-                              Color(0xffbfe9ff),
-                            ],
-                            tileMode: TileMode.mirror,
-                          ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black.withOpacity(0.5),
-                              spreadRadius: 1,
-                              blurRadius: 3,
-                              offset: const Offset(0, 1),
-                            ),
-                          ],
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            ///터치 시 이 술로 만들 수 있는
-                            ///칵테일 종류 리스트 페이지
-                          },
-                          child: Container(
-                            alignment: Alignment.center,
-                            child: Text(
-                              '  #Cocktails  ',
-                              style: TextStyle(
-                                fontSize: 30,
-                                fontFamily: 'kor',
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),*/
