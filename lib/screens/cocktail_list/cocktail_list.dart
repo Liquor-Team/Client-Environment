@@ -17,26 +17,17 @@ class DrinkList extends StatefulWidget {
 class _DrinkListState extends State<DrinkList> {
 
   static List<Cocktail> cocktail_list = [
-    Cocktail(
-        1, "Blue Hawaii", "파란색의 달달한 칵테일", "맛있음", "lib/assets/cocktail.png"),
-    Cocktail(2, "Dry Martini", "근본 칵테일", "맛있음", "lib/assets/cocktail.png"),
-    Cocktail(
-        3, "Jack Cock", "잭 다니엘스의 대표 칵테일", "맛있음", "lib/assets/cocktail.png"),
-    Cocktail(
-        4, "Whisky Sour", "위스키 베이스의 레몬향 칵테일", "맛있음", "lib/assets/cocktail.png"),
-    Cocktail(
-        5, "Long Island Iced Tea", "달달한 칵테일", "맛있음", "lib/assets/cocktail.png"),
-    Cocktail(
-        6, "Khalua Milk", "커피향의 부드러운 칵테일", "맛있음", "lib/assets/cocktail.png"),
-    Cocktail(
-        7, "Mint Julep", "위스키 베이스의ㅡ 민트향 칵테일", "맛있음", "lib/assets/cocktail.png"),
-    Cocktail(8, "Screwdriver", "도수높은 칵테일", "맛있음", "lib/assets/cocktail.png"),
-    Cocktail(9, "Bloody Mary", "토마토와 셀러리가 들어가는 특이한 칵테일", "맛있음",
-        "lib/assets/cocktail.png"),
-    Cocktail(10, "Margarita", "데킬라 베이스의 멕시칸 스타일 칵테일", "맛있음",
-        "lib/assets/cocktail.png"),
-    Cocktail(
-        11, "Gin Fizz", "진 베이스의 상쾌한 칵테일", "맛있음", "lib/assets/cocktail.png"),
+    Cocktail(1, "Blue Hawaii", "파란색의 달달한 칵테일", "맛있음", "lib/assets/real_cocktails/blue_hawaii.png"),
+    Cocktail(2, "Dry Martini", "근본 칵테일", "맛있음", "lib/assets/real_cocktails/dry_martini.png"),
+    Cocktail(3, "Jack Cock", "잭 다니엘스의 대표 칵테일", "맛있음", "lib/assets/real_cocktails/jack_cock.png"),
+    Cocktail(4, "Whisky Sour", "위스키 베이스의 레몬향 칵테일", "맛있음", "lib/assets/real_cocktails/sour.png"),
+    Cocktail(5, "Long Island Iced Tea", "달달한 칵테일", "맛있음", "lib/assets/real_cocktails/longtea.png"),
+    Cocktail(6, "Khalua Milk", "커피향의 부드러운 칵테일", "맛있음", "lib/assets/real_cocktails/khalua_milk.png"),
+    Cocktail(7, "Mint Julep", "위스키 베이스의ㅡ 민트향 칵테일", "맛있음", "lib/assets/real_cocktails/mint_julep.png"),
+    Cocktail(8, "Screwdriver", "도수높은 칵테일", "맛있음", "lib/assets/real_cocktails/screwdriver.png"),
+    Cocktail(9, "Bloody Mary", "토마토와 셀러리가 들어가는 특이한 칵테일", "맛있음", "lib/assets/real_cocktails/bloody_mary.png"),
+    Cocktail(10, "Margarita", "데킬라 베이스의 멕시칸 스타일 칵테일", "맛있음", "lib/assets/real_cocktails/margarita.png"),
+    Cocktail(11, "Gin Fizz", "진 베이스의 상쾌한 칵테일", "맛있음", "lib/assets/real_cocktails/jin_fizz.png"),
   ];
 
   List<Cocktail> display_list = List.from(cocktail_list);
@@ -171,7 +162,9 @@ class _DrinkListState extends State<DrinkList> {
                                     color: Colors.white),
                               ),
                               leading:
-                                  Image.asset('${display_list[index].image!}'),
+                                  Image.asset('${display_list[index].image!}',
+                                  width: 60,
+                                  height: 60,),
                             )))
               ],
             ),

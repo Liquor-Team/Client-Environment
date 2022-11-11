@@ -9,6 +9,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import '../../models/camera_response.dart';
 import '../information_result/liquor_information.dart';
 import '../../util/config.dart';
+import 'package:graduation_project/screens/temp/loading.dart';
 
 import '../../models/camera_liquor.dart';
 
@@ -190,11 +191,16 @@ class CameraScreenState extends State<CameraScreen> {
                               liquors: parsedYoloResponse.liquors!);
                         } else if (parsedYoloResponse.size! == 1) {
                           /// 1개일 때는 다이렉트 이동
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => LiquorInformation(
-                                  liquorName: parsedYoloResponse
-                                      .liquors![0].name
-                                      .toString())));
+                          // Navigator.of(context).push(MaterialPageRoute(
+                          //     builder: (context) => LiquorInformation(
+                          //         liquorName: parsedYoloResponse
+                          //             .liquors![0].name
+                          //             .toString()))
+
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => Loading())
+
+                          );
                         } else {
                           // 에러 처리 필요
                           showDialog(
