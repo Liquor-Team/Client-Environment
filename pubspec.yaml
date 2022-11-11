@@ -79,10 +79,13 @@ flutter:
    - lib/assets/scan.png
    - lib/assets/cocktail-find.png
    - lib/assets/holidays.png
+   - lib/assets/summer-holidays.png
    - lib/assets/scan2.png
    - lib/assets/focus_negative.png
    - lib/assets/giphy_loading.gif
    - lib/assets/loading_bar.gif
+   - lib/assets/jim_beam.png
+   - lib/assets/real_cocktails/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
