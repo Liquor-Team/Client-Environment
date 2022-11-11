@@ -104,7 +104,7 @@ class _LongTeaState extends State<LongTea> {
                 Container(
                   height: displaySize.height * 0.3,
                   child: Image.asset(
-                    'lib/assets/real_cocktails/old_fashioned.png',
+                    'lib/assets/real_cocktails/longtea.png',
                   ),
                 ),
                 Container(
