@@ -43,7 +43,7 @@ class _JimBeamCocktailState extends State<JimBeamCocktail> {
           centerTitle: true,
           title: GradientText(
             'Cocktails by Jim Beam',
-            style: const TextStyle(
+            style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: 'text',
               fontSize: 20,
@@ -54,7 +54,7 @@ class _JimBeamCocktailState extends State<JimBeamCocktail> {
             ],
           ),
           flexibleSpace: Container(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
@@ -68,7 +68,7 @@ class _JimBeamCocktailState extends State<JimBeamCocktail> {
           ),
         ),
         body: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
@@ -130,7 +130,7 @@ class _JimBeamCocktailState extends State<JimBeamCocktail> {
                                 },
                                 child: GradientText(
                                   '더보기',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontFamily: 'kor',
                                     fontSize: 20,

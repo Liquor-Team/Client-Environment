@@ -6,7 +6,6 @@ import 'package:graduation_project/util/constants.dart';
 import 'package:material_floating_search_bar/material_floating_search_bar.dart';
 import 'package:graduation_project/util/cocktail_data.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LongTea extends StatefulWidget {
   const LongTea({Key? key}) : super(key: key);
@@ -45,8 +44,8 @@ class _LongTeaState extends State<LongTea> {
           elevation: 7,
           centerTitle: true,
           title: GradientText(
-            'Long Island Iced Tea',
-            style: const TextStyle(
+            'Cocktail Information',
+            style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: 'text',
               fontSize: 20,
@@ -57,7 +56,7 @@ class _LongTeaState extends State<LongTea> {
             ],
           ),
           flexibleSpace: Container(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
@@ -71,7 +70,7 @@ class _LongTeaState extends State<LongTea> {
           ),
         ),
         body: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -91,7 +90,7 @@ class _LongTeaState extends State<LongTea> {
                   height: displaySize.height * 0.1,
                   child: GradientText(
                     longtea.name!,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontFamily: 'kor',
                       fontSize: 50,
@@ -112,11 +111,11 @@ class _LongTeaState extends State<LongTea> {
                   margin: EdgeInsets.all(10),
                   padding: EdgeInsets.all(10),
                   height: displaySize.height * 0.2,
-                  width: displaySize.width,
+                  width: displaySize.width * 0.9,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
                     //color: Colors.white.withOpacity(0.15),
-                    gradient: const LinearGradient(
+                    gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: <Color>[
@@ -130,80 +129,78 @@ class _LongTeaState extends State<LongTea> {
                         color: Colors.black.withOpacity(0.2),
                         spreadRadius: 2,
                         blurRadius: 3,
-                        offset: const Offset(0, 3),
+                        offset: Offset(0, 3),
                       ),
                     ],
                   ),
-                  child: Expanded(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.vertical,
-                      child: Column(
-                        children: <Widget>[
-                          Text(
-                            '${longtea.name!} recipe',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 30,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '진 - 15ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '보드카 - 15ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '화이트 럼 - 15ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '데키라 - 15ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '코앵트로 - 15ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '레몬 주스 - 30ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '시럽 - 20ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '콜라 - Full Up',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ],
-                      ),
+                  child:SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          '${longtea.name!} recipe',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '진 - 15ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '보드카 - 15ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '화이트 럼 - 15ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '데키라 - 15ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '코앵트로 - 15ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '레몬 주스 - 30ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '시럽 - 20ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '콜라 - Full Up',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -211,11 +208,11 @@ class _LongTeaState extends State<LongTea> {
                   margin: EdgeInsets.all(10),
                   padding: EdgeInsets.all(15),
                   height: displaySize.height * 0.2,
-                  width: displaySize.width,
+                  width: displaySize.width * 0.9,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
                     //color: Colors.white.withOpacity(0.15),
-                    gradient: const LinearGradient(
+                    gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: <Color>[
@@ -233,17 +230,15 @@ class _LongTeaState extends State<LongTea> {
                       ),
                     ],
                   ),
-                  child: Expanded(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.vertical,
-                      child: Text(
-                        longteatext,
-                        style: TextStyle(
-                            height: 1.5,
-                            fontFamily: 'kor',
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
-                      ),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Text(
+                      longteatext,
+                      style: TextStyle(
+                          height: 1.5,
+                          fontFamily: 'kor',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),

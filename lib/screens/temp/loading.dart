@@ -31,7 +31,7 @@ class _Loading  extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end:  Alignment.bottomRight,
@@ -44,7 +44,7 @@ class _Loading  extends State<Loading> {
       ),
       child: Center(
         child: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end:  Alignment.bottomRight,

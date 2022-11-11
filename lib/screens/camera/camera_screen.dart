@@ -70,7 +70,7 @@ class CameraScreenState extends State<CameraScreen> {
           centerTitle: true,
           title: GradientText(
             'Liquor Finder',
-            style: const TextStyle(
+            style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: 'text',
               fontSize: 20,),
@@ -80,7 +80,7 @@ class CameraScreenState extends State<CameraScreen> {
             ],
           ),
           flexibleSpace: Container(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
@@ -94,7 +94,7 @@ class CameraScreenState extends State<CameraScreen> {
           ),
         ),
         body: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -108,12 +108,12 @@ class CameraScreenState extends State<CameraScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              const Spacer(),
+              Spacer(),
               Container(
                 alignment: Alignment.center,
                 child: _showCameraPreview(),
               ),
-              const Spacer(),
+              Spacer(),
               Container(
                 height: 75,
                 width: 75,
@@ -125,7 +125,7 @@ class CameraScreenState extends State<CameraScreen> {
                       height: 70,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        gradient: const LinearGradient(
+                        gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: <Color>[
@@ -139,11 +139,11 @@ class CameraScreenState extends State<CameraScreen> {
                             color: Colors.black.withOpacity(0.5),
                             spreadRadius: 1,
                             blurRadius: 3,
-                            offset: const Offset(0, 1),
+                            offset: Offset(0, 1),
                           ),
                         ],
                       ),
-                      child: const Icon(
+                      child: Icon(
                         Icons.search,
                         color: Colors.white60
                       ),
@@ -258,7 +258,7 @@ class CameraScreenState extends State<CameraScreen> {
                     color: Colors.black.withOpacity(0.5),
                     spreadRadius: 3,
                     blurRadius: 7,
-                    offset: const Offset(0, 2),
+                    offset: Offset(0, 2),
                   ),
                 ],
                 borderRadius: BorderRadius.circular(25),

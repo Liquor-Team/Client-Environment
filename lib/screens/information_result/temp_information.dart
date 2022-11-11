@@ -111,12 +111,12 @@ class _TempInformationState extends State<TempInformation> {
                   Container(
                     margin: EdgeInsets.all(10),
                     padding: EdgeInsets.all(10),
-                    height: displaySize.height * 0.27,
+                    height: displaySize.height * 0.25,
                     width: displaySize.width,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       //color: Colors.white.withOpacity(0.15),
-                      gradient: const LinearGradient(
+                      gradient: LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: <Color>[
@@ -130,21 +130,19 @@ class _TempInformationState extends State<TempInformation> {
                           color: Colors.black.withOpacity(0.2),
                           spreadRadius: 2,
                           blurRadius: 3,
-                          offset: const Offset(0, 3),
+                          offset: Offset(0, 3),
                         ),
                       ],
                     ),
-                    child: Expanded(
-                      child: SingleChildScrollView(
-                        scrollDirection: Axis.vertical,
-                        child: Text(
-                          jimbeam,
-                          style: TextStyle(
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.vertical,
+                      child: Text(
+                        jimbeam,
+                        style: TextStyle(
                             height: 1.5,
-                              fontFamily: 'kor',
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                        ),
+                            fontFamily: 'kor',
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -155,7 +153,7 @@ class _TempInformationState extends State<TempInformation> {
                     margin: EdgeInsets.fromLTRB(10, 25, 10, 0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
-                      gradient: const LinearGradient(
+                      gradient: LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: <Color>[
@@ -169,7 +167,7 @@ class _TempInformationState extends State<TempInformation> {
                           color: Colors.black.withOpacity(0.5),
                           spreadRadius: 1,
                           blurRadius: 3,
-                          offset: const Offset(0, 1),
+                          offset: Offset(0, 1),
                         ),
                       ],
                     ),
@@ -185,7 +183,7 @@ class _TempInformationState extends State<TempInformation> {
                         alignment: Alignment.center,
                         child: GradientText(
                           '#${tempCocktail.name} Cocktails',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontFamily: 'kor',
                             fontSize: 30,

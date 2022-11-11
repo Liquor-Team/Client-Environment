@@ -6,7 +6,6 @@ import 'package:graduation_project/util/constants.dart';
 import 'package:material_floating_search_bar/material_floating_search_bar.dart';
 import 'package:graduation_project/util/cocktail_data.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OldFashioned extends StatefulWidget {
   const OldFashioned({Key? key}) : super(key: key);
@@ -45,8 +44,8 @@ class _OldFashionedState extends State<OldFashioned> {
           elevation: 7,
           centerTitle: true,
           title: GradientText(
-            'Old Fashioned',
-            style: const TextStyle(
+            'Cocktail Information',
+            style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: 'text',
               fontSize: 20,
@@ -57,7 +56,7 @@ class _OldFashionedState extends State<OldFashioned> {
             ],
           ),
           flexibleSpace: Container(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
@@ -71,7 +70,7 @@ class _OldFashionedState extends State<OldFashioned> {
           ),
         ),
         body: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -91,7 +90,7 @@ class _OldFashionedState extends State<OldFashioned> {
                   height: displaySize.height * 0.1,
                   child: GradientText(
                     oldFashioned.name!,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontFamily: 'kor',
                       fontSize: 60,
@@ -116,7 +115,7 @@ class _OldFashionedState extends State<OldFashioned> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
                     //color: Colors.white.withOpacity(0.15),
-                    gradient: const LinearGradient(
+                    gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: <Color>[
@@ -130,66 +129,64 @@ class _OldFashionedState extends State<OldFashioned> {
                         color: Colors.black.withOpacity(0.2),
                         spreadRadius: 2,
                         blurRadius: 3,
-                        offset: const Offset(0, 3),
+                        offset: Offset(0, 3),
                       ),
                     ],
                   ),
-                  child: Expanded(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.vertical,
-                      child: Column(
-                        children: <Widget>[
-                          Text(
-                            '${oldFashioned.name!} recipe',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 30,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '버번 위스키 - 45ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '탄산수 - 15ml',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '가루 설탕 - 1tsp',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '앙고스투라 비터 - 1 Dash',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '*저민 오렌지(garnish)',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            '*마라스키노 체리(garnish)',
-                            style: TextStyle(
-                                fontFamily: 'kor',
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ],
-                      ),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          '${oldFashioned.name!} recipe',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '버번 위스키 - 45ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '탄산수 - 15ml',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '가루 설탕 - 1tsp',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '앙고스투라 비터 - 1 Dash',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '*저민 오렌지(garnish)',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '*마라스키노 체리(garnish)',
+                          style: TextStyle(
+                              fontFamily: 'kor',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -201,7 +198,7 @@ class _OldFashionedState extends State<OldFashioned> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
                     //color: Colors.white.withOpacity(0.15),
-                    gradient: const LinearGradient(
+                    gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: <Color>[
@@ -215,21 +212,19 @@ class _OldFashionedState extends State<OldFashioned> {
                         color: Colors.black.withOpacity(0.2),
                         spreadRadius: 2,
                         blurRadius: 3,
-                        offset: const Offset(0, 3),
+                        offset: Offset(0, 3),
                       ),
                     ],
                   ),
-                  child: Expanded(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.vertical,
-                      child: Text(
-                        oldFashionedtext,
-                        style: TextStyle(
-                            height: 1.5,
-                            fontFamily: 'kor',
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
-                      ),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Text(
+                      oldFashionedtext,
+                      style: TextStyle(
+                          height: 1.5,
+                          fontFamily: 'kor',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),

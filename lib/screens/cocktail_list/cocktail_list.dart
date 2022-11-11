@@ -16,22 +16,35 @@ class DrinkList extends StatefulWidget {
 }
 
 class _DrinkListState extends State<DrinkList> {
-
   static List<Cocktail> cocktail_list = [
-    Cocktail(1, "Blue Hawaii", "파란색의 달달한 칵테일", "맛있음", "lib/assets/real_cocktails/blue_hawaii.png"),
-    Cocktail(2, "Dry Martini", "근본 칵테일", "맛있음", "lib/assets/real_cocktails/dry_martini.png"),
-    Cocktail(12, "Old Fashioned", "심플한 조합, 다양한 바리에이션", "맛있음", "lib/assets/real_cocktails/old_fashioned.png"),
-    Cocktail(3, "Jack Cock", "잭 다니엘스의 대표 칵테일", "맛있음", "lib/assets/real_cocktails/jack_cock.png"),
-    Cocktail(4, "Whisky Sour", "위스키 베이스의 레몬향 칵테일", "맛있음", "lib/assets/real_cocktails/sour.png"),
-    Cocktail(5, "Long Island Iced Tea", "달달한 칵테일", "맛있음", "lib/assets/real_cocktails/longtea.png"),
-    Cocktail(6, "Khalua Milk", "커피향의 부드러운 칵테일", "맛있음", "lib/assets/real_cocktails/khalua_milk.png"),
-    Cocktail(7, "Mint Julep", "위스키 베이스의ㅡ 민트향 칵테일", "맛있음", "lib/assets/real_cocktails/mint_julep.png"),
-    Cocktail(8, "Screwdriver", "도수높은 칵테일", "맛있음", "lib/assets/real_cocktails/screwdriver.png"),
-    Cocktail(9, "Bloody Mary", "토마토와 셀러리가 들어가는 특이한 칵테일", "맛있음", "lib/assets/real_cocktails/bloody_mary.png"),
-    Cocktail(10, "Margarita", "데킬라 베이스의 멕시칸 스타일 칵테일", "맛있음", "lib/assets/real_cocktails/margarita.png"),
-    Cocktail(11, "Gin Fizz", "진 베이스의 상쾌한 칵테일", "맛있음", "lib/assets/real_cocktails/jin_fizz.png"),
-    Cocktail(13, "Manhattan", "칵테일의 여왕", "맛있음", "lib/assets/real_cocktails/manhattan.png"),
-    Cocktail(14, "New York", "뉴욕의 밤", "맛있음", "lib/assets/real_cocktails/new_york.png"),
+    Cocktail(1, "Blue Hawaii", "파란색의 달달한 칵테일", "맛있음",
+        "lib/assets/real_cocktails/blue_hawaii.png"),
+    Cocktail(2, "Dry Martini", "근본 칵테일", "맛있음",
+        "lib/assets/real_cocktails/dry_martini.png"),
+    Cocktail(12, "Old Fashioned", "심플한 조합, 다양한 바리에이션", "맛있음",
+        "lib/assets/real_cocktails/old_fashioned.png"),
+    Cocktail(3, "Jack Cock", "잭 다니엘스의 대표 칵테일", "맛있음",
+        "lib/assets/real_cocktails/jack_cock.png"),
+    Cocktail(4, "Whisky Sour", "위스키 베이스의 레몬향 칵테일", "맛있음",
+        "lib/assets/real_cocktails/sour.png"),
+    Cocktail(5, "Long Island Iced Tea", "달달한 칵테일", "맛있음",
+        "lib/assets/real_cocktails/longtea.png"),
+    Cocktail(6, "Khalua Milk", "커피향의 부드러운 칵테일", "맛있음",
+        "lib/assets/real_cocktails/khalua_milk.png"),
+    Cocktail(7, "Mint Julep", "위스키 베이스의ㅡ 민트향 칵테일", "맛있음",
+        "lib/assets/real_cocktails/mint_julep.png"),
+    Cocktail(8, "Screwdriver", "도수높은 칵테일", "맛있음",
+        "lib/assets/real_cocktails/screwdriver.png"),
+    Cocktail(9, "Bloody Mary", "토마토와 셀러리가 들어가는 특이한 칵테일", "맛있음",
+        "lib/assets/real_cocktails/bloody_mary.png"),
+    Cocktail(10, "Margarita", "데킬라 베이스의 멕시칸 스타일 칵테일", "맛있음",
+        "lib/assets/real_cocktails/margarita.png"),
+    Cocktail(11, "Gin Fizz", "진 베이스의 상쾌한 칵테일", "맛있음",
+        "lib/assets/real_cocktails/jin_fizz.png"),
+    Cocktail(13, "Manhattan", "칵테일의 여왕", "맛있음",
+        "lib/assets/real_cocktails/manhattan.png"),
+    Cocktail(14, "New York", "뉴욕의 밤", "맛있음",
+        "lib/assets/real_cocktails/new_york.png"),
   ];
 
   List<Cocktail> display_list = List.from(cocktail_list);
@@ -148,31 +161,34 @@ class _DrinkListState extends State<DrinkList> {
                     child: ListView.builder(
                         itemCount: display_list.length,
                         itemBuilder: (context, index) => ListTile(
-                              contentPadding: EdgeInsets.all(8.0),
-                              title: Text(
-                                display_list[index].name!,
-                                style: TextStyle(
+                            contentPadding: EdgeInsets.all(8.0),
+                            title: Text(
+                              display_list[index].name!,
+                              style: TextStyle(
+                                fontFamily: 'kor',
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                                fontSize: 25,
+                              ),
+                            ),
+                            subtitle: Text(
+                              '${display_list[index].summary!}',
+                              style: TextStyle(
                                   fontFamily: 'kor',
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.black,
-                                  fontSize: 25,
-                                ),
-                              ),
-                              subtitle: Text(
-                                '${display_list[index].summary!}',
-                                style: TextStyle(
-                                    fontFamily: 'kor',
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white),
-                              ),
-                              leading:
-                                  Image.asset('${display_list[index].image!}',
-                                  width: 60,
-                                  height: 60,),
+                                  color: Colors.white),
+                            ),
+                            leading: Image.asset(
+                              '${display_list[index].image!}',
+                              width: 60,
+                              height: 60,
+                            ),
                             trailing: InkWell(
-                              onTap: (){
-                                Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => LongTea()));
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => LongTea()));
                               },
                               child: GradientText(
                                 '더보기',
@@ -186,8 +202,7 @@ class _DrinkListState extends State<DrinkList> {
                                   Color(0xff642B73),
                                 ],
                               ),
-                            )
-                            )))
+                            ))))
               ],
             ),
           ),
