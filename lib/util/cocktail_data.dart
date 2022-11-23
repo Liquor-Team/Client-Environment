@@ -40,6 +40,51 @@ final List<Cocktail> cocktail_List = [
       "lib/assets/real_cocktails/manhattan.png"),
   Cocktail(13, "New York", "뉴욕의 밤", "맛있음",
       "lib/assets/real_cocktails/new_york.png"),
+  ///새로 추가
+  Cocktail(14, "Americano", "업무중엔 마실 수 없습니다", "맛있음",
+      "lib/assets/real_cocktails/americano.png"),
+  Cocktail(15, "Cuba Libre", "쿠바에 자유를", "맛있음",
+      "lib/assets/real_cocktails/cuba_libre.png"),
+  Cocktail(16, "Irish Coffee", "아일랜드에서는 커피를 이렇게", "맛있음",
+      "lib/assets/real_cocktails/irish_coffee.png"),
+  Cocktail(17, "Negroni", "네그로니 백작의 칵테일", "맛있음",
+      "lib/assets/real_cocktails/negroni.png"),
+  Cocktail(18, "Sea Breeze", "바닷바람을 칵테일로", "맛있음",
+      "lib/assets/real_cocktails/sea_breeze.png"),
+  Cocktail(19, "Black Russian", "간단하지만 맛있는 칵테일", "맛있음",
+      "lib/assets/real_cocktails/black_russian.png"),
+  Cocktail(20, "Daiquiri", "라임주스와 바카디의 조화", "맛있음",
+      "lib/assets/real_cocktails/daiquiri.png"),
+  Cocktail(21, "John Collins", "새콤달콤", "맛있음",
+      "lib/assets/real_cocktails/john_collins.png"),
+  Cocktail(22, "Penicillin", "약이 아닙니다", "맛있음",
+      "lib/assets/real_cocktails/penicillin.png"),
+  Cocktail(23, "Sex On The Beach", "바로 그 칵테일", "맛있음",
+      "lib/assets/real_cocktails/sex_on_the_beach.png"),
+  Cocktail(24, "Blue Lagoon", "푸른 산호초", "맛있음",
+      "lib/assets/real_cocktails/blue_lagoon.png"),
+  Cocktail(25, "Godfather", "칵테일계의 Godfather", "맛있음",
+      "lib/assets/real_cocktails/godfather.png"),
+  Cocktail(26, "Mai Tai", "타히티어로 최고를 뜻한다", "맛있음",
+      "lib/assets/real_cocktails/mai_tai.png"),
+  Cocktail(27, "Rainbow Paradise", "보기만해도 취하는 칵테일", "맛있음",
+      "lib/assets/real_cocktails/rainbow_paradise.png"),
+  Cocktail(28, "Bronx", "진, 베르무트 그리고 오렌지", "맛있음",
+      "lib/assets/real_cocktails/bronx.png"),
+  Cocktail(29, "Harvey Wallbanger", "취해서 머리를 부딪힐 수도", "맛있음",
+      "lib/assets/real_cocktails/harvey_wallbanger.png"),
+  Cocktail(30, "Midori Sour", "멜론맛의 달콤한 칵테일", "맛있음",
+      "lib/assets/real_cocktails/midori_sour.png"),
+  Cocktail(31, "Russian Spring Punch", "이름과 달리 영국 출신", "맛있음",
+      "lib/assets/real_cocktails/russian_spring_punch.png"),
+  Cocktail(32, "Cosmopolitan", "대표적인 레이디 킬러 칵테일", "맛있음",
+      "lib/assets/real_cocktails/cosmopolitan.png"),
+  Cocktail(33, "Hemmingway Special", "헤밍웨이의 칵테일", "맛있음",
+      "lib/assets/real_cocktails/hemmingway_special.png"),
+  Cocktail(34, "Mojito", "모히또에서 몰디브 한잔", "맛있음",
+      "lib/assets/real_cocktails/mojito.png"),
+  Cocktail(35, "Rusty Nail", "녹슨 못은 안들어가요", "맛있음",
+      "lib/assets/real_cocktails/rusty_nail.png"),
 ];
 
 final List<Column> cocktail_Recipe = [
@@ -645,6 +690,824 @@ final List<Column> cocktail_Recipe = [
       ),
     ],
   ),///뉴욕
+  Column(
+    children: <Widget>[
+      Text(
+        'Americano recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '캄파리 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스위트 베르무트 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '탄산수 - 약간',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+
+    ],
+  ),///아메리카노
+  Column(
+    children: <Widget>[
+      Text(
+        'Cuba Libre recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '럼 - 45ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라임 주스 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '콜라 - Full Up',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///쿠바 리브레
+  Column(
+    children: <Widget>[
+      Text(
+        'Irish Coffee recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '아이리시 위스키 - 50ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '뜨거운 커피 - 120ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '설탕 - 1tsp',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '크림 - 50ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///아이리시 커피
+  Column(
+    children: <Widget>[
+      Text(
+        'Negroni recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '드라이 진 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스위트 베르무트 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '캄파리 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///네그로니
+  Column(
+    children: <Widget>[
+      Text(
+        'Sea Breeze recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '보드카 - 40ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '크랜베리 주스 - 120ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '자몽 주스 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///시 브리즈
+  Column(
+    children: <Widget>[
+      Text(
+        'Black Russian recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '보드카 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '깔루아 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///블랙 러시안
+  Column(
+    children: <Widget>[
+      Text(
+        'Daiquiri recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라이트 럼 - 52.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라임 주스 - 22.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '설탕 - 1tsp',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///다이키리
+  Column(
+    children: <Widget>[
+      Text(
+        'John Collins recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '진 - 45ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '레몬 주스 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '심플 시럽 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '탄산수 - 60ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///존 콜린스
+  Column(
+    children: <Widget>[
+      Text(
+        'Penicillin recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스카치 위스키 - 60ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라가불린 16년 - 7.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '레몬 주스 - 22.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '허니 시럽 - 22.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '저민 생강 - 3 pieces',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///페니실린
+  Column(
+    children: <Widget>[
+      Text(
+        'Sex On The Beach recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '보드카 - 40ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '피치 슈냅스 - 20ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '크랜베리 주스 - 40ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '오렌지 주스 - 40ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///섹스 온 더 비치
+  Column(
+    children: <Widget>[
+      Text(
+        'Blue Lagoon recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '보드카 - 40ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '블루 큐라소 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '레몬 주스 - 20ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '사이다 - Full Up',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///블루 라군
+  Column(
+    children: <Widget>[
+      Text(
+        'Godfather recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '위스키 - 50ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '디사론노 - 25ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '*오렌지 트위스트 - 1 piece(garnish)',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///갓파더
+  Column(
+    children: <Widget>[
+      Text(
+        'Mai Tai recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '화이트 럼 - 37.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '트리플 섹 - 22.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라임 주스 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '오렌지 주스 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '파인애플 주스 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '그레나딘 시럽 - 7.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///마이타이
+  Column(
+    children: <Widget>[
+      Text(
+        'Rainbow Paradise recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '그레나딘 시럽 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '파인애플 주스 - 120ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '말리부 - 60ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '물 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '블루 큐라소 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///레인보우 파라다이스
+  Column(
+    children: <Widget>[
+      Text(
+        'Bronx recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '진 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스위트 베르무트 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '드라이 베르무트 - 10ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '오렌지 주스 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///브롱스
+  Column(
+    children: <Widget>[
+      Text(
+        'Harvey Wallbanger recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '보드카 - 45ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '갈리아노 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '오렌지 주스 - Full Up',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///하비 월뱅어
+  Column(
+    children: <Widget>[
+      Text(
+        'Midori Sour recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '미도리 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스윗 앤 사워 믹스 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스프라이트 - 60ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///미도리 사워
+  Column(
+    children: <Widget>[
+      Text(
+        'Russian Spring Punch recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '보드카 - 25ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라임 주스 - 25ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '크렘 드 카시스 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '설탕 시럽 - 10ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스파클링 와인 - Full Up',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///러시안 스프링 펀치
+  Column(
+    children: <Widget>[
+      Text(
+        'Cosmopolitan recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '보드카 - 30ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '트리플 섹 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라임 주스 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '크랜베리 주스 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///코스모폴리탄
+  Column(
+    children: <Widget>[
+      Text(
+        'Hemmingway Special recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '화이트 럼 - 60ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '자몽 주스 - 40ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라임 주스 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '마라스키노 - 15ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///헤밍웨이 스페셜
+  Column(
+    children: <Widget>[
+      Text(
+        'Mojito recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '화이트 럼 - 45ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '민트 - 6 leaves',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '백설탕 - 2 tsp',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라임 주스 - 20ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '탄산수 - Full Up',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///모히또
+  Column(
+    children: <Widget>[
+      Text(
+        'Rusty Nail recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스카치 위스키 - 45ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '드람뷔 - 25ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///러스티 네일
+
 
 ];
 
@@ -805,6 +1668,198 @@ final List<Text> cocktail_summary_data = [
         fontFamily: 'kor',
         fontSize: 20,
         fontWeight: FontWeight.bold),),///뉴욕
+  Text('본래 이탈리아에서는 밀라노에서 생산된 캄파리와 토리노에서 생산된 베르무트를 1:1로 섞어 마시는 ‘밀라노-토리노(Milano-Torino)’ '
+      '라는 칵테일이 있었으며, '
+      '이후 미국인들이 이 밀라노-토리노의 씁쓸한 맛을 줄이고 마시기 편하게 하고자 탄산수를 섞어 만든 음료가 바로 지금의 아메리카노다.'
+      '본래 밀라노-토리노는 비터 베르무트(Bitter Vermouth)에 가까운 스위트 베르무트를 사용했으나, '
+      '한국에서는 구하기 어려운 재료이다. 안티카 포뮬라를 사용하는 것이 가장 오리지널에 가까운 맛과 향을 낸다고 한다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///아메리카노
+  Text('럼 베이스 칵테일로, 현재 IBA 공식 칵테일에 등록되어 있는 레시피 중 하나이다.'
+      '역사와 의미를 생각한다면 바카디 럼으로 만드는 것이 좋다. '
+      '최소한 하바나클럽 같은 쿠바 럼으로 만들어야 쿠바 리브레라는 이름을 사용할 수 있다.'
+      '탄산음료에 의해 알콜이 희석되기 때문에 도수가 크게 낮아지며 알콜 특유의 향도 거의 사라진다. '
+      '따라서 술에 약한 사람도 쉽게 마실 수 있다는 장점이 있기 때문에 바나 클럽에서는 진 토닉처럼 반드시 팔고 있다.'
+      '화이트 럼에 라임 조각으로 장식하는 것이 정석이라고 한다. '
+      '다만 바텐더나 바의 특성에 따라 다크 럼을 사용하기도 하고, 라임이 아닌 레몬을 넣어주기도 한다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///쿠바 리브레
+  Text('위스키 베이스의 칵테일로, 커피와 술이 모두 들어가다 보니 분류기준에 따라 커피 바리에이션과 칵테일 둘 다 포함된다.'
+      '오늘날의 아이리시 커피는 1950년대 아일랜드 섀넌 공항에서 승객들의 추위를 달래기 위해 제공하던 음료에서 유래했다는 설이 유력하다.'
+      '술 자체의 향이 연한 아이리시 위스키가 아니면 맛이 정말 없다. 피트 향이 강해서 호불호가 갈리는 수준의 위스키가 아니라 잭다니엘, 짐 빔, 조니 워커 등 그냥 어지간한 위스키는 다 어울리지 않는다. '
+      '커피 향보다 위스키 향이 훨씬 강하다는 걸 알 수 있다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///아이리시 커피
+  Text('진 베이스로 하며, 이름은 이탈리아의 네그로니 백작에서 유래한 것이다. '
+      '1961년 IBA 공식 레시피가 작성된 이래부터 현재까지 한 번도 빠짐 없이 공식 레시피에 오른 칵테일이다.'
+      '캄파리 특유의 쌉쌀한 맛이 스위트 베르무트의 달짝지근한 맛과 어울리면서 진의 향과 맛과 조화를 이루는 맛이 난다.'
+      '특히 미국에서는 모르는 사람이 없을 정도로 매우 인지도가 높은 칵테일이다. 웬만한 바에서는 반드시 메뉴에 포함되는 칵테일이다',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///네그로니
+  Text('보드카 베이스 칵테일로, 맛은 크렌베리와 자몽 주스가 재료로 들어가 새콤달콤하다. '
+      '알콜 도수가 8도밖에 되지 않아 누구나 부담없이 마실 수 있는 칵테일이다.'
+      '이름인 시 브리즈는 바다에서 불어오는 바람을 의미한다',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///시 브리즈
+  Text('보드카 베이스 칵테일. 여기에 리큐르인 깔루아를 넣는다. '
+      '보드카 베이스인데다 우유, 토닉워터, 주스 등 음료는 안 들어가고 술과 리큐르만 들어가기 때문에 도수는 제법 높다.'
+      '비율은 취향에 따라 조정해도 좋다. 단맛을 강하게 내려면 1:1에 가깝게 섞거나 반대로 5:1 정도로 단맛을 줄이는 레시피도 가능하다. '
+      '본인이 단 맛을 싫어한다면 참고하도록 하자. 단 이 경우 도수가 굉장히 독해지니 각오하고 마셔야 한다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///블랙 러시안
+  Text('이름의 유래는 '
+      '다이키리의 창시자인 제닝스 콕스(Jennings Cox)가 일하던 산티아고 데 쿠바의 광산 마을인 다이키리(Daiquirí)에서 유래된 것이다.'
+      '주로 식전주로 사용된다.'
+      '모히토와 함께 세계적인 작가인 어니스트 헤밍웨이가 사랑한 2가지의 칵테일 중 하나로 꼽힌다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///다이키리
+  Text('진 베이스로, 레몬 주스와 설탕 시럽, 탄산수가 들어가 새콤달콤하면서도 시원한 맛을 내는 칵테일이다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///존 콜린스
+  Text('위스키 베이스 칵테일. 달고 신 맛이 나면서도 생강 시럽이 들어가 엷은 생강 향이 은은하게 입안에 맴돈다.'
+      '싱글몰트 아일라 위스키를 제외한 나머지 재료들을 얼음과 함께 8~10초간 셰이킹한 다음, 얼음을 걸러내고 차갑게 식힌 올드 패션드 글라스에 따라준다. '
+      '이후 싱글몰트 아일라 위스키를 플로팅해 준 다음, 진저캔디나 레몬 필, 혹은 편강(片薑)[3]으로 가니쉬하면 완성이다.'
+      '싱글 몰트 아일라 위스키를 구하기 어렵다면 조니 워커 더블 블랙처럼 비교적 피트 향이 강한 블렌디드 위스키를 사용하는 것도 방법이다.'
+      '',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///페니실린
+  Text('보드카 베이스로, 무척이나 개성 넘치는 이름 덕분에 현재까지도 인기가 많은 칵테일이다. '
+      '현재 IBA 공식 칵테일에 등록되어 있는 레시피 중 하나이다.'
+      '보드카 베이스에 복숭아 혹은 파인애플 주스를 넣고, '
+      '이후 동일량의 주스들을 배합하는 등 다양한 바리에이션이 존재하며, 취향에 따라 체리나 막대사탕을 곁들이는 등 다양한 형태로 즐길 수 있다.'
+      '',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///섹스 온 더 비치
+  Text('보드카 베이스 칵테일로, 이름의 뜻은 푸른 산호초. 그래서인지 칵테일 색도 마찬가지로 푸른색이다.'
+      '이름이 비슷한 블루 하와이와는 꽤 가까운 관계로, 블루 하와이에서 술만 보드카로 바꿔도 블루 라군과 흡사한 맛이 난다. '
+      '파인애플 주스가 빠져있기 때문에 블루 하와이보다는 스카이다이빙과 제일 가까운 맛을 낸다.'
+      '',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///블루 라군
+  Text('위스키 베이스로, 만드는 방법 자체가 간단해서 디스코 시대를 풍미한 칵테일이다. '
+      '누가 만들어도 맛의 편차가 크지 않아서 바 만이 아니라 식당이나 클럽에서도 판매하기 쉽고 마시기 간편했기 때문에 디스코가 유행하던 시절에 많은 사람들이 찾은 칵테일이다. '
+      '1970년대에 만들어진 칵테일이기 때문에 이미지만큼 오래된 칵테일은 아니다.'
+      '기주를 보드카로 바꾸면 갓마더가 되며, 기주 대신 헤비 크림을 넣으면 갓차일드가 된다.'
+      '',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///갓파더
+  Text('럼 베이스 칵테일로, 타히티어로 “최고”를 의미한다. 동시에 처음 맛본 사람은 누구나 “마이타이!”를 외칠 거라는 의미를 가지고 있기도 하다.'
+      '1944년 켈리포니아의 오클랜드에 위치한 트레이더 빅스(Trader Vic’s) 레스토랑의 바텐더 빅토르 줄스 베르게론(Victor Jules Bergeron)가 '
+      '처음으로 선보였다고 전해진다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///마이타이
+  Text('럼 베이스 칵테일로, 유래는 아일랜드라고 한다. 무지개 색으로 플로팅되어 무척 아름다운 색깔을 자랑하며, 덕분에 해외에서 무척 유명한 칵테일이기도 하다. 유명한 만큼 변형도 무척 많은데,'
+      ' 리큐르 하나를 더 추가하거나, 슬러시 형태로 만들기도 하는 등 다양하다. 맛은 매우 달콤한 편이다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///레인보우 파라다이스
+  Text('진과 베르무트, 오렌지 주스를 섞은 칵테일. 1934년에는 마티니, 맨해튼에 이어 세계에서 3번째로 유명한 칵테일의 자리에 오른 적도 있다. '
+      '이름의 유래는 뉴욕의 카운티 브롱스.'
+      '진의 맛과 오렌지 주스의 맛, 베르무트의 향이 순서대로 느껴지는 칵테일이다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///브롱스
+  Text('보드카 베이스 칵테일. 스크루드라이버에 갈리아노를 추가한 버전이다.'
+      '도수는 15도로 낮지 않은 편이나 오렌지 주스로 술맛이 잘 느껴지지 않아 스크루드라이버와 함께 레이디 킬러 칵테일로 불리기도 한다.'
+      '기원은 캘리포니아의 파도타기 선수인 하비가 경기에서 패배한 후 술집에서 이것저것 섞어 마시다 취했는데, '
+      '이때 그가 벽에 여기저기 부딪히며 걸어갔다고 한다. 이런 모습을 사람들이 보게 되고, 이후 그가 섞어 만든 칵테일의 이름으로 지어 준 것이다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///하비 월뱅어
+  Text('칵테일의 한 종류. 멜론 리큐르의 한 종류인 미도리를 사용해 만드는 유명한 칵테일이다. '
+      '멜론맛인 미도리와 스윗&사워 믹스의 레몬향이 어우러져서 상큼한 색깔과 맛을 연출하는 것이 포인트.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///미도리 사워
+  Text('보드카를 베이스로 하는 아름다운 칵테일'
+      '영국의 바텐더 딕 브레드셀(Dick Bradsell)이 1980년에 처음으로 선보였다고 한다.'
+      '처음 제조하게 된 계기는 친구인 피터 켄트가 자신의 결혼을 축하하는 의미로 칵테일 파티를 열 계획이었으나 자금이 부족했고, '
+      '이에 딕 브레드셀이 비교적 값싼 재료들로 많은 양의 칵테일을 만들 방법을 고민해 창시해낸 것이라고 한다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///러시안 스프링 펀치
+  Text('보드카를 베이스로 한다. 대표적인 레이디 킬러 칵테일 중 하나로, 달콤한 맛에 비해 도수가 무려 20도를 넘어선다.'
+      ' HBO에서 방영했던 TV 쇼 섹스 앤 더 시티에서 코스모폴리탄이 등장하게 되고, 이후 1990년대 코스모폴리탄은 다시 어마어마한 전성기를 누리게 되며 당시 바에 있는 대부분의 사람들이 코스모폴리탄을 마시고 있었다고 표현되곤 한다. '
+      '이후 오늘날까지 꾸준한 인기를 이어 오고 있으며, 현재 코스모폴리탄은 IBA 공식 칵테일에 등록되어 있다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///코스모폴리탄
+  Text('어니스트 헤밍웨이의 요청으로 만들어진 다이키리의 배리에이션 칵테일. '
+      '‘파파 도블레(Papa Doble)’라는 이명이 있으며, 2011년 IBA 공식 칵테일로 지정되었다.'
+      '1930년대 헤밍웨이가 즐겨다닌 엘 플로리디타(El Floridita)에서 처음으로 선보여졌다고 알려져 있다. 우연히 엘 플로리디타에 들러 바텐더 콘스탄티노 베르트(Constantino Ribalaigua Vert)의 프로즌 다이키리를 맛본 헤밍웨이는 맛에 감탄하면서도 설탕을 줄이고 럼을 2배로 넣어달라는 주문을 했고, '
+      '이에 콘스탄티노가 헤밍웨이의 다이키리를 서빙하며 “There it is, Papa.”라 말했다고 한다. 여기서 파파는 헤밍웨이의 별명이다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///헤밍웨이 스페셜
+  Text('럼 베이스 칵테일로, 명칭은 마법의 부적이라는 의미의 스페인어인 ‘Mojo’ 에서 유래한 것이다.'
+      '맛은 달달함과 동시에 민트 향을 내면서 씁쓸한 뒷맛이 스쳐가니 나름 입체적인 맛이라 할 수 있다.'
+      '',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///모히또
+  Text('위스키 베이스로, 여기에 ‘드람뷔’ 라 불리는 리큐르가 재료로 들어간다.'
+      '기원은 금주법 시대로 거슬러올라, 밀주의 조잡한 맛을 가리기 위해 드람뷔를 첨가한 데서 비롯되었다고 한다. '
+      '녹슨 못이라는 의미의 ‘Rusty Nail’ 명칭 자체는 1960년대에 붙여진 것으로, 칵테일의 색깔을 비유하여 붙여진 것이다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///러스티 네일
 ];
 
 final List<Cocktail> jimbeam_cocktail_List = [
@@ -813,6 +1868,9 @@ final List<Cocktail> jimbeam_cocktail_List = [
   Cocktail(2, "Manhattan", "칵테일의 여왕", "맛있음", "lib/assets/real_cocktails/manhattan.png"),
   Cocktail(3, "Whisky Sour", "위스키 베이스의 레몬향 칵테일", "맛있음", "lib/assets/real_cocktails/sour.png"),
   Cocktail(4, "New York", "뉴욕의 밤", "맛있음", "lib/assets/real_cocktails/new_york.png"),
+  Cocktail(5, "Penicillin", "약이 아닙니다", "맛있음", "lib/assets/real_cocktails/penicillin.png"),
+  Cocktail(6, "Godfather", "칵테일계의 Godfather", "맛있음", "lib/assets/real_cocktails/godfather.png"),
+  Cocktail(7, "Rusty Nail", "녹슨 못은 안들어가요", "맛있음", "lib/assets/real_cocktails/rusty_nail.png"),
 ];
 
 final List<Column> jimbeam_cocktail_recipe = [
@@ -1018,6 +2076,109 @@ final List<Column> jimbeam_cocktail_recipe = [
       ),
     ],
   ),///뉴욕
+  Column(
+    children: <Widget>[
+      Text(
+        'Penicillin recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스카치 위스키 - 60ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '라가불린 16년 - 7.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '레몬 주스 - 22.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '허니 시럽 - 22.5ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '저민 생강 - 3 pieces',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///페니실린
+  Column(
+    children: <Widget>[
+      Text(
+        'Godfather recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '위스키 - 50ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '디사론노 - 25ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '*오렌지 트위스트 - 1 piece(garnish)',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///갓파더
+  Column(
+    children: <Widget>[
+      Text(
+        'Rusty Nail recipe',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 30,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '스카치 위스키 - 45ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+      Text(
+        '드람뷔 - 25ml',
+        style: TextStyle(
+            fontFamily: 'kor',
+            fontSize: 20,
+            fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),///러스티 네일
 ];
 
 final List<Text> jimbeam_cocktail_summary_data = [
@@ -1072,5 +2233,33 @@ final List<Text> jimbeam_cocktail_summary_data = [
         fontFamily: 'kor',
         fontSize: 20,
         fontWeight: FontWeight.bold),),///뉴욕
+  Text('위스키 베이스 칵테일. 달고 신 맛이 나면서도 생강 시럽이 들어가 엷은 생강 향이 은은하게 입안에 맴돈다.'
+      '싱글몰트 아일라 위스키를 제외한 나머지 재료들을 얼음과 함께 8~10초간 셰이킹한 다음, 얼음을 걸러내고 차갑게 식힌 올드 패션드 글라스에 따라준다. '
+      '이후 싱글몰트 아일라 위스키를 플로팅해 준 다음, 진저캔디나 레몬 필, 혹은 편강(片薑)[3]으로 가니쉬하면 완성이다.'
+      '싱글 몰트 아일라 위스키를 구하기 어렵다면 조니 워커 더블 블랙처럼 비교적 피트 향이 강한 블렌디드 위스키를 사용하는 것도 방법이다.'
+      '',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///페니실린
+  Text('위스키 베이스로, 만드는 방법 자체가 간단해서 디스코 시대를 풍미한 칵테일이다. '
+      '누가 만들어도 맛의 편차가 크지 않아서 바 만이 아니라 식당이나 클럽에서도 판매하기 쉽고 마시기 간편했기 때문에 디스코가 유행하던 시절에 많은 사람들이 찾은 칵테일이다. '
+      '1970년대에 만들어진 칵테일이기 때문에 이미지만큼 오래된 칵테일은 아니다.'
+      '기주를 보드카로 바꾸면 갓마더가 되며, 기주 대신 헤비 크림을 넣으면 갓차일드가 된다.'
+      '',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///갓파더
+  Text('위스키 베이스로, 여기에 ‘드람뷔’ 라 불리는 리큐르가 재료로 들어간다.'
+      '기원은 금주법 시대로 거슬러올라, 밀주의 조잡한 맛을 가리기 위해 드람뷔를 첨가한 데서 비롯되었다고 한다. '
+      '녹슨 못이라는 의미의 ‘Rusty Nail’ 명칭 자체는 1960년대에 붙여진 것으로, 칵테일의 색깔을 비유하여 붙여진 것이다.',
+    style: TextStyle(
+        height: 1.5,
+        fontFamily: 'kor',
+        fontSize: 20,
+        fontWeight: FontWeight.bold),),///러스티 네일
 ];
 
